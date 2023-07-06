@@ -18,6 +18,7 @@
       </nav>
     </header>
     <main>
+      <div class="showcase"></div>
       <div class="container">
         <h3>Our products</h3>
         <p>
@@ -34,8 +35,23 @@
     <script>
       let data = new Date().getFullYear();
       let foot = document.querySelector("footer p");
+      let showcase = document.querySelector(".showcase");
       console.log(foot);
       foot.textContent = `&:copy; Copyright Reserved ${data}`;
+      console.log(showcase);
+      const w = function () {
+        let date = new Date();
+        let hour = new Date().getHours();
+        let minute = new Date().getMinutes();
+        let seconds = new Date().getSeconds();
+        let watch = `${hour}:${minute}:${seconds}  `;
+        let watch2 = hour + ":" + minute + ":" + seconds;
+        showcase.textContent = watch
+        console.log(watch);
+        console.log(watch2);
+      };
+      w();
     </script>
+    <script src="./home.tsx"></script>
   </body>
 </html>

@@ -11,3 +11,11 @@ footer {
   background: #b0fc;
   font-size: 1.4rem;
 }
+.showcase {
+  font-size: 3rem;
+  background: yellow;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
